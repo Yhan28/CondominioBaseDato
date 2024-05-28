@@ -1,14 +1,15 @@
 using AutoMapper;
-using Condominio.
+using Condominio.DataAccess.Abstract.Comodidades;
+using Condominio.Grpc
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 
 namespace Condominio.Service.Services
 {
-    public class ComodidadService : Comodidad.ComodidadBase
+    public class ComodidadService : Condominio.GrpcProtos.Comodidad.ComodidadBase
     {
 
-        private IComodidadRepository _comodidadRepository;
+        private IComodidadesRepository _comodidadRepository;
         private IMapper _mapper;
 
 

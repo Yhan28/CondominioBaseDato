@@ -1,3 +1,4 @@
+using Condominio.Domain.Entities.Comodidades;
 using Condominio.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
