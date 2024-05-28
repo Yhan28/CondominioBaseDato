@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Condominio.Domain", "Condominio.Domain\Condominio.Domain.csproj", "{97D86674-5567-430E-8CF1-B3D56EBCE07F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Condominio.DataAccess", "Condominio.DataAccess\Condominio.DataAccess.csproj", "{23CB0CF5-971E-412A-8968-CE5B58511F1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97D86674-5567-430E-8CF1-B3D56EBCE07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D86674-5567-430E-8CF1-B3D56EBCE07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D86674-5567-430E-8CF1-B3D56EBCE07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D86674-5567-430E-8CF1-B3D56EBCE07F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23CB0CF5-971E-412A-8968-CE5B58511F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23CB0CF5-971E-412A-8968-CE5B58511F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23CB0CF5-971E-412A-8968-CE5B58511F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23CB0CF5-971E-412A-8968-CE5B58511F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {187E8044-5CE5-4BF6-99E5-916D85473B7D}
+	EndGlobalSection
+EndGlobal
