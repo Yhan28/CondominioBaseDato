@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+option csharp_namespace = "Condominio.GrpcProtos";
+
+package GrpcProtos;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/struct.proto";
+import "common.proto";
+
+service Inquilino {
+  
+  rpc CreateInquilino (CreateInquilinoRequest) returns (InquilinoDTO);
+  rpc GetInquilino (GetRequest) returns (NullableInquilinoDTO);
+  rpc UpdateInquilino(InquilinoDTO) returns (google.protobuf.Empty);
+  rpc DeleteInquilino(InquilinoDTO) returns (google.protobuf.Empty);
+}
+
+message InquilinoDTO{
+	int32 id = 1;
+	string nombre = 2;
+	int32 ci = 3;
+	int32 telefono = 4;
+	ViviendaDTO vivienda = 5;
+	string fecha_Contrat = 6;
+	int32 duracion_Contrat = 7;
+}
+
+message NullableInquilinoDTO{
+	oneof kind{
+		google.protobuf.NullValue null = 1;
+		InquilinoDTO inquilino = 2;
+	}
+}
+
+message CreateInquilinoRequest{
+	string nombre = 1;
+	int32 ci = 2;
+	int32 telefono = 3;
+	ViviendaDTO vivienda = 4;
+	string fecha_Contrat = 5;
+	int32 duracion_Contrat = 6;
+}
+

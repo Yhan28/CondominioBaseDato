@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option csharp_namespace = "Condominio.GrpcProtos";
+
+package GrpcProtos;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/struct.proto";
+import "common.proto";
+
+service Vivienda {
+  
+  rpc CreateVivienda (CreateViviendaRequest) returns (ViviendaDTO);
+  rpc GetVivienda (GetRequest) returns (NullableViviendaDTO);
+  rpc UpdateVivienda(ViviendaDTO) returns (google.protobuf.Empty);
+  rpc DeleteVivienda(ViviendaDTO) returns (google.protobuf.Empty);
+}
+
+message ViviendaDTO{
+	int32 id = 1;
+	int32 numeracion = 2;
+	string direccion = 3;
+}
+
+message NullableViviendaDTO{
+	oneof kind{
+		google.protobuf.NullValue null = 1;
+		ViviendaDTO vivienda = 2;
+	}
+}
+
+message CreateViviendaRequest{
+	int32 numeracion = 1;
+	string direccion = 2;
+}
+

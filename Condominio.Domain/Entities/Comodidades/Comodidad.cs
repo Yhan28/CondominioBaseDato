@@ -1,5 +1,4 @@
 ﻿using Condominio.Domain.Entities.Common;
-using Condominio.Domain.Entities.Relacion_Viviendas_Comodidades;
 using Condominio.Domain.Entities.Viviendas;
 using System;
 using System.Collections.Generic;
@@ -27,10 +26,7 @@ namespace Condominio.Domain.Entities.Comodidades
         /// </summary>
         public List<Vivienda_Renta> Vivienda_Renta_List { get; set; }
 
-        /// <summary>
-        /// Tabla de los ID de comodidades y viviendas de renta
-        /// </summary>
-        public List<ViviendasyComodidad> Relacion_List { get; set; }
+      
         #endregion
 
         #region Constructor
@@ -38,8 +34,8 @@ namespace Condominio.Domain.Entities.Comodidades
 
             Nombre = nombre;
             Valor = valor;
-            Vivienda_Renta_List = new List<Vivienda_Renta> ();
-            Relacion_List = new List<ViviendasyComodidad> ();
+           
+           
         }
 
         protected Comodidad() { }
