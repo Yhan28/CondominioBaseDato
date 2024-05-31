@@ -17,6 +17,8 @@ namespace Condominio.DataAccess.Abstract.Viviendas
         /// <param name="direccion">Direccion de la vivienda.</param>
         /// <returns></returns>
         Vivienda CreateVivienda(int numeracion, string direccion);
+        void BeginTransaction();
+        void CommitTransaction();
 
         /// <summary>
         /// Crea una vivienda en BD.

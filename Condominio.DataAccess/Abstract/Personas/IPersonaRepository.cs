@@ -23,6 +23,9 @@ namespace Condominio.DataAccess.Abstract.Personas
         /// <returns></returns>
         Propietario CreatePropietario(string nombre, int ci, int telefono, Vivienda vivienda);
 
+
+        object CreateInquilino(string nombre, string fechaContrat, int ci, int telefono, int duracionContrat);
+
         /// <summary>
         /// Crea un inquilino en BD.
         /// </summary>

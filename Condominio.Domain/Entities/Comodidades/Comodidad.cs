@@ -34,8 +34,9 @@ namespace Condominio.Domain.Entities.Comodidades
 
             Nombre = nombre;
             Valor = valor;
-           
-           
+            Vivienda_Renta_List = new List<Vivienda_Renta>();
+
+
         }
 
         protected Comodidad() { }

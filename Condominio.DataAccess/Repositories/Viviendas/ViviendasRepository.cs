@@ -44,6 +44,7 @@ namespace Condominio.DataAccess.Repositories
         {
             _context.Set<Vivienda>().Update(vivienda);
         }
+
     }
 }
 

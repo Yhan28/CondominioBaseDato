@@ -40,10 +40,10 @@ namespace Condominio.DataAccess.Repositories
         public void BeginTransaction()
         {
             if (IsInTransaction)
-                throw new InvalidOperationException("Cannot begin a new transaction before closing the current one.");
+                throw new InvalidOperationException("Cannot begin a new transaction before closing the current one");
             // Creando nuevo contexto para la transacción.
             _context = new ApplicationContext(_connectionString);
-            // Generando migración en caso de que la base de datos no exista.
+            // Generando migración si la base de datos no existe.
             if (!_context.Database.CanConnect())
                 _context.Database.Migrate();
         }
