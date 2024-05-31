@@ -9,11 +9,11 @@
 	<ItemGroup>
 		<Protobuf Include="*.proto" GrpcServices="Both" />
 	</ItemGroup>
-			
-  <ItemGroup>
-    <PackageReference Include="Google.Protobuf" Version="3.26.1" />
-    <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
-  </ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Google.Protobuf" Version="3.26.1" />
+	  <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
+	</ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Condominio.Domain\Condominio.Domain.csproj" />

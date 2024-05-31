@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Condominio.Domain.Entities.Personas.Propietario;
 
 namespace Condominio.Services.Mappers
 {

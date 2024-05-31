@@ -9,6 +9,7 @@ import "google/protobuf/empty.proto";
 import "google/protobuf/struct.proto";
 import "common.proto";
 
+
 service Comodidad {
   
   rpc CreateComodidad (CreateComodidadRequest) returns (ComodidadDTO);

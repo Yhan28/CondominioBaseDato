@@ -11,8 +11,8 @@ import "common.proto";
 
 service Vivienda {
   
-  rpc CreateVivienda (CreateViviendaRequest) returns (ViviendaDTO);
-  rpc GetVivienda (GetRequest) returns (NullableViviendaDTO);
+  rpc CreateVivienda(CreateViviendaRequest) returns (ViviendaDTO);
+  rpc GetVivienda(GetRequest) returns (NullableViviendaDTO);
   rpc UpdateVivienda(ViviendaDTO) returns (google.protobuf.Empty);
   rpc DeleteVivienda(ViviendaDTO) returns (google.protobuf.Empty);
 }

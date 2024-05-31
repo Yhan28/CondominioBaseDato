@@ -2,9 +2,9 @@
 
 namespace Condominio.Services.Mappers
 {
-    public class Vivienda_RentaProfile : Profile
+    public class Vivienda_Renta_Profile : Profile
     {
-        public Vivienda_RentaProfile()
+        public Vivienda_Renta_Profile()
         {
             
             CreateMap<Condominio.Domain.Entities.Viviendas.Vivienda_Renta, Vivienda_RentaDTO>()

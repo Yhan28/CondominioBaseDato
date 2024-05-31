@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Condominio.
 namespace Condominio.Services.Mappers
 {
     public class ComodidadProfile : Profile
